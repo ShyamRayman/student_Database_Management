@@ -1,0 +1,13 @@
+.buttonCancel{
+    background-color: rgb(193, 16, 16);
+    margin-bottom: 10px;
+    width:30%;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.buttonDelete{
+    background-color: rgb(27, 171, 27);
+    margin-bottom: 10px;
+    width:30%;
+}

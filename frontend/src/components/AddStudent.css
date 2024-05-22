@@ -1,0 +1,18 @@
+.buttonDiv{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonSave{
+  background-color: rgb(27, 171, 27);
+  width:200px;
+  margin-bottom: 10px;
+}
+
+.buttonClose{
+  background-color: rgb(193, 16, 16);
+  width:200px;
+  margin-bottom: 10px;
+}

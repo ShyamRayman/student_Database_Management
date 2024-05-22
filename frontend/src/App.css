@@ -1,0 +1,519 @@
+/* table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 50%;
+} */
+
+/* 
+
+td,
+th {
+  border: 2px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+
+tr:nth-child(even) {
+  background-color: #dddddd; */
+
+/* 
+  .App {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .main-content {
+    flex: 1;
+    padding: 20px;
+    overflow: auto;
+  }
+  
+  .controls {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+    left:700px;
+    
+  }
+  
+  .controls input {
+    margin-left: 10px;
+    padding: 5px;
+  }
+  
+  .container {
+    width:90%;
+    border-collapse: collapse;
+  }
+  
+  .container th, .container td {
+    padding: 8px;
+  }
+  
+  .container th {
+    background-color: #faf8f8;
+    text-align: left;
+    width:100px;
+  }
+
+  td {
+    background-color: #faf8f8;
+    text-align: left;
+  }
+
+ 
+
+  table{
+    position: relative;
+    left:180px;
+    font-size: 13px;
+  } */
+
+/* @media only screen and (max-width: 1000px) {
+    table{
+      position: relative;
+      left:180px;
+      font-size: 13px;
+    }
+  }
+
+  @media only screen and (max-width: 950px) {
+    table{
+      position: relative;
+      left:130px;
+      font-size: 13px;
+    }
+  }  */
+
+/* Base styles */
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  position: relative;
+  left: 180px;
+  font-size: 13px;
+}
+
+td,
+th {
+  text-align: left;
+  padding: 8px;
+  width: 170px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+th {
+  background-color: #faf8f8;
+  text-align: left;
+}
+
+td {
+  background-color: #faf8f8;
+  text-align: left;
+}
+
+/* Media queries */
+@media only screen and (max-width: 950px) {
+  th:nth-child(4),
+  th:nth-child(5),
+  td:nth-child(4),
+  td:nth-child(5) {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  th:nth-child(3),
+  th:nth-child(4),
+  th:nth-child(5),
+  td:nth-child(3),
+  td:nth-child(4),
+  td:nth-child(5) {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  table {
+    left: 150px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  table {
+    left: 175px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  table {
+    left: 130px
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  table {
+    left: 130px
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  table {
+    left: 160px
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  table {
+    left: 170px;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  table {
+    left: 150px;
+  }
+}
+
+@media only screen and (max-width: 730px) {
+  table {
+    left: 150px;
+  }
+}
+
+
+
+@media only screen and (max-width: 700px) {
+  table {
+    left: 60px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  table {
+    left: 30px;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  table {
+    left: 10px;
+  }
+}
+
+/* Flexbox layout for the app */
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  overflow: auto;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.controls input {
+  margin-left: 10px;
+  padding: 5px;
+}
+
+.container {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.container th,
+.container td {
+  padding: 8px;
+}
+
+.buttonAddNewStudent {
+  width: 150px;
+  background-color: rgb(27, 171, 27);
+  font-size: 15px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+.inputSearch {
+  width: 250px;
+  text-align: center;
+  outline: none;
+}
+
+
+
+@media only screen and (max-width: 700px) {
+  .controls input,
+  .buttonAddNewStudent {
+    width: 50%; /* Full width on small screens */
+    margin-left: 0; /* Reset margin */
+    margin-bottom: 10px; /* Space between input and button */
+  }
+}
+
+@media only screen and (max-width: 2000px) {
+  .controls {
+    left: 1000px;
+  }
+
+  .StudentsH2 {
+    right: 520px;
+  }
+}
+
+@media only screen and (max-width: 2600px) {
+  .controls {
+    left: 14  00px;
+  }
+
+  .StudentsH2 {
+    right: 520px;
+  }
+}
+
+@media only screen and (max-width: 2400px) {
+  .controls {
+    left: 1200px;
+  }
+
+  .StudentsH2 {
+    right: 520px;
+  }
+}
+
+@media only screen and (max-width: 2200px) {
+  .controls {
+    left: 1100px;
+  }
+
+  .StudentsH2 {
+    right: 520px;
+  }
+}
+
+@media only screen and (max-width: 1900px) {
+  .controls {
+    left: 950px;
+  }
+
+  .StudentsH2 {
+    right: 520px;
+  }
+}
+
+@media only screen and (max-width: 1800px) {
+  .controls {
+    left: 900px;
+  }
+
+  .StudentsH2 {
+    right: 520px;
+  }
+}
+
+@media only screen and (max-width: 1700px) {
+  .controls {
+    left: 850px;
+  }
+
+  .StudentsH2 {
+    right: 520px;
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  .controls {
+    left: 800px;
+  }
+
+  .StudentsH2 {
+    right: 520px;
+  }
+}
+
+@media only screen and (max-width: 1500px) {
+  .controls {
+    left: 750px;
+  }
+
+  .StudentsH2 {
+    right: 520px;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .controls {
+    left: 700px;
+  }
+
+  .StudentsH2 {
+    right: 450px;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .controls {
+    left: 610px;
+  }
+
+  .StudentsH2 {
+    right: 410px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .controls {
+    left: 500px;
+  }
+
+  .StudentsH2 {
+    right: 300px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .controls {
+    left: 430px;
+  }
+
+  .StudentsH2 {
+    right: 240px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .controls {
+    left: 350px;
+  }
+
+  .StudentsH2 {
+    right: 130px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .controls {
+    left: 250px;
+  }
+
+  .StudentsH2 {
+    right: 60px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .controls {
+    left: 180px;
+  }
+
+  .StudentsH2 {
+    right: 1px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .controls {
+    left: 100px;
+  }
+
+  .controls input,
+  .buttonAddNewStudent {
+    width: 30%;
+    margin-left: 0;
+    margin-bottom: 10px;
+    font-size: 15px;
+  }
+
+  .StudentsH2 {
+    right: 50px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .controls {
+    left: 90px;
+  }
+
+  .controls input,
+  .buttonAddNewStudent {
+    width: 30%;
+    margin-left: 0;
+    margin-bottom: 10px;
+    font-size: 12px;
+  }
+
+  .StudentsH2 {
+    right: 40px;
+    font-size: 25px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .controls {
+    left: 30px;
+  }
+
+  .controls input,
+  .buttonAddNewStudent {
+    width: 40%;
+    margin-left: 0;
+    margin-bottom: 10px;
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .controls {
+    left: 30px;
+  }
+
+  .controls input,
+  .buttonAddNewStudent {
+    width: 40%;
+    margin-left: 0;
+    margin-bottom: 10px;
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .controls {
+    left: 10px;
+  }
+
+  .controls input,
+  .buttonAddNewStudent {
+    width: 40%;
+    margin-left: 0;
+    margin-bottom: 10px;
+    font-size: 6px;
+  }
+
+  .StudentsH2 {
+    right: 30px;
+    font-size: 20px;
+  }
+}
+
+.StudentsH2 {
+  position: relative;
+}
